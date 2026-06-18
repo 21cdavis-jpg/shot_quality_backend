@@ -9,7 +9,7 @@ const path = require('path');
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, '..client/dist')));
 
 const db = new sqlite3.Database('./sports.db', (err) => {
     if (err) console.error(err.message);
